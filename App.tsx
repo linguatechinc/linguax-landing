@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import TrustedBy from './components/TrustedBy';
 import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
 import CTA from './components/CTA';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
                 <Header />
                 <main>
                     <Hero />
+                    <TrustedBy />
                     <Features />
                     <HowItWorks />
                     <CTA />
