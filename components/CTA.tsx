@@ -13,7 +13,7 @@ const CTA: React.FC = () => {
                 </p>
                 <div className="mt-10">
                     <a
-                        href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20solicitar%20una%20demo%20de%20LinguaX."
+                        href="https://wa.me/34613476568?text=Hola,%20me%20gustaría%20solicitar%20una%20demo%20de%20LinguaX."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block bg-violet-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg shadow-violet-600/30 hover:bg-violet-700 transition-all duration-300 transform hover:scale-105"

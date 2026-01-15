@@ -10,7 +10,7 @@ const Header: React.FC = () => {
                         Lingua<span className="text-violet-500">X</span>
                     </div>
                      <a
-                        href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20solicitar%20una%20demo%20de%20LinguaX."
+                        href="https://wa.me/34613476568?text=Hola,%20me%20gustaría%20solicitar%20una%20demo%20de%20LinguaX."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hidden sm:inline-block bg-transparent border border-gray-700 text-white font-semibold py-2 px-6 rounded-lg hover:bg-gray-800 transition-colors duration-300"
