@@ -56,10 +56,10 @@ const Hero: React.FC = () => {
                         rel="noopener noreferrer"
                         className="bg-violet-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg shadow-violet-600/30 hover:bg-violet-700 transition-all duration-300 transform hover:scale-105"
                     >
-                        Solicitar una Demo
+                        Solicitar Demo gratuita
                     </a>
                 </div>
-                <div className="mt-20">
+                <div className="mt-15">
                     <VoiceWave />
                 </div>
             </div>
