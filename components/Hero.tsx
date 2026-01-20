@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const VoiceWave: React.FC = () => (
     <div className="relative w-full max-w-2xl mx-auto h-48 flex items-center justify-center">
@@ -38,26 +39,29 @@ const VoiceWave: React.FC = () => (
     </div>
 );
 
+interface HeroProps {
+    onOpenModal: () => void;
+}
 
-const Hero: React.FC = () => {
+const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
+    const { t } = useTranslation();
+
     return (
         <section className="py-24 sm:py-32">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-gray-200 to-white">
-                    La Infraestructura de Voz IA para Equipos de Alto Rendimiento
+                    {t('hero.title')}
                 </h1>
                 <p className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-gray-400">
-                    Transformamos la comunicación de su equipo de ventas y soporte con entrenamiento de voz en tiempo real, impulsado por IA.
+                    {t('hero.subtitle')}
                 </p>
                 <div className="mt-10 flex justify-center">
-                    <a
-                        href="https://wa.me/34613476568?text=Hola,%20me%20gustaría%20solicitar%20una%20demo%20de%20LinguaX."
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <button
+                        onClick={onOpenModal}
                         className="bg-violet-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg shadow-violet-600/30 hover:bg-violet-700 transition-all duration-300 transform hover:scale-105"
                     >
-                        Solicitar Demo gratuita
-                    </a>
+                        {t('hero.cta')}
+                    </button>
                 </div>
                 <div className="mt-15">
                     <VoiceWave />

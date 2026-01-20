@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const companies = [
     'TechCorp',
@@ -11,11 +12,13 @@ const companies = [
 ];
 
 const TrustedBy: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="py-16 sm:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wider">
-                    Impulsando a los equipos más exigentes
+                    {t('trustedBy.title')}
                 </h2>
                 <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
                     {companies.map((company) => (

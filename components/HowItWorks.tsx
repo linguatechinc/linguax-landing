@@ -1,32 +1,35 @@
 
 import React from 'react';
-
-const steps = [
-    {
-        number: '01',
-        title: 'Conectar',
-        description: 'Conecte sus sistemas actuales en minutos a través de nuestra API segura y robusta.'
-    },
-    {
-        number: '02',
-        title: 'Entrenar',
-        description: 'La IA comienza a analizar conversaciones y provee feedback accionable en tiempo real.'
-    },
-    {
-        number: '03',
-        title: 'Optimizar',
-        description: 'Vea un aumento medible en la efectividad, tasas de cierre y satisfacción del cliente.'
-    }
-];
+import { useTranslation } from 'react-i18next';
 
 const HowItWorks: React.FC = () => {
+    const { t } = useTranslation();
+
+    const steps = [
+        {
+            number: '01',
+            title: t('howItWorks.step1.title'),
+            description: t('howItWorks.step1.description')
+        },
+        {
+            number: '02',
+            title: t('howItWorks.step2.title'),
+            description: t('howItWorks.step2.description')
+        },
+        {
+            number: '03',
+            title: t('howItWorks.step3.title'),
+            description: t('howItWorks.step3.description')
+        }
+    ];
+
     return (
         <section className="py-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Implementación en 3 Pasos Simples</h2>
+                    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">{t('howItWorks.title')}</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-400">
-                        Comience a transformar la comunicación de su equipo en tiempo récord.
+                        {t('howItWorks.subtitle')}
                     </p>
                 </div>
                 <div className="mt-16 relative">

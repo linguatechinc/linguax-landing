@@ -1,7 +1,9 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
+    const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
 
     return (
@@ -9,10 +11,10 @@ const Footer: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className="text-gray-500 text-sm">
                     <p className="font-semibold tracking-wider uppercase">
-                        A Delaware Corporation / US Based Infrastructure
+                        {t('footer.badge')}
                     </p>
                     <p className="mt-4">
-                        &copy; {currentYear} LinguaX. Todos los derechos reservados.
+                        &copy; {currentYear} LinguaX. {t('footer.copyright')}
                     </p>
                 </div>
             </div>

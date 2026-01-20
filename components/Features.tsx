@@ -1,33 +1,36 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { AnalysisIcon, IntegrationIcon, SecurityIcon } from './icons';
 
-const features = [
-    {
-        name: 'Análisis Tonal IA',
-        description: 'Nuestra IA analiza el tono, ritmo y claridad para optimizar cada conversación y mejorar la efectividad.',
-        icon: <AnalysisIcon />,
-    },
-    {
-        name: 'Integración Transparente',
-        description: 'Se integra con sus plataformas CRM y de comunicación existentes sin fricción, en cuestión de minutos.',
-        icon: <IntegrationIcon />,
-    },
-    {
-        name: 'Seguridad Enterprise-Grade',
-        description: 'Infraestructura segura y confiable, diseñada para las exigencias corporativas y la protección de datos.',
-        icon: <SecurityIcon />,
-    },
-];
-
 const Features: React.FC = () => {
+    const { t } = useTranslation();
+
+    const features = [
+        {
+            name: t('features.analysis.title'),
+            description: t('features.analysis.description'),
+            icon: <AnalysisIcon />,
+        },
+        {
+            name: t('features.integration.title'),
+            description: t('features.integration.description'),
+            icon: <IntegrationIcon />,
+        },
+        {
+            name: t('features.security.title'),
+            description: t('features.security.description'),
+            icon: <SecurityIcon />,
+        },
+    ];
+
     return (
         <section className="py-24 bg-[#0A0A12]/50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Potencia Sin Precedentes. Resultados Medibles.</h2>
+                    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">{t('features.title')}</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-400">
-                        LinguaX no es solo una herramienta, es la infraestructura que su equipo necesita para dominar la comunicación.
+                        {t('features.subtitle')}
                     </p>
                 </div>
                 <div className="mt-16 grid gap-8 md:grid-cols-3">
