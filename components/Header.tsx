@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
                         Lingua<span className="text-violet-500">X</span> Ai
                     </div>
                     <div className="flex items-center space-x-6">
-                        <div className="hidden sm:flex items-center space-x-1 border border-gray-700 rounded-lg p-1">
+                        <div className="flex items-center space-x-1 border border-gray-700 rounded-lg p-1">
                             <button
                                 onClick={() => changeLanguage('es')}
                                 className={`px-3 py-1 text-sm font-semibold rounded-md transition-colors duration-200 ${i18n.language.startsWith('es') ? 'bg-violet-600 text-white' : 'text-gray-400 hover:text-white'}`}
