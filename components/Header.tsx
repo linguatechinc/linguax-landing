@@ -17,8 +17,10 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
         <header className="py-6">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <nav className="flex justify-between items-center">
-                    <div className="text-3xl font-extrabold tracking-tight">
-                        Lingua<span className="text-violet-500">X</span> Ai
+                    <div className="cursor-pointer" onClick={() => window.location.reload()}>
+                        <span className="text-3xl font-extrabold tracking-tight text-white">
+                            Lingua<span className="text-violet-500">X</span>-Ai
+                        </span>
                     </div>
                     <div className="flex items-center space-x-6">
                         <div className="flex items-center space-x-1 border border-gray-700 rounded-lg p-1">

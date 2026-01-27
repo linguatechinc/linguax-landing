@@ -41,7 +41,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onClose }) => {
         setStatus('submitting');
         
         try {
-            const response = await fetch('https://formspree.io/f/mvojoyyl', {
+            const response = await fetch('https://formspree.io/f/mojdbnkj', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
