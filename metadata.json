@@ -1,5 +1,7 @@
 {
   "name": "LinguaX AI Voice Coach",
   "description": "Landing page for LinguaX, the first AI-powered voice coach for B2B, designed to enhance communication for high-performance sales and support teams.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [
+    "microphone"
+  ]
 }

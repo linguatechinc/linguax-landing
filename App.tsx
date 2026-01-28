@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import TrustedBy from './components/TrustedBy';
 import Features from './components/Features';
+import InteractiveWidget from './components/InteractiveWidget';
 import HowItWorks from './components/HowItWorks';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
@@ -36,6 +37,7 @@ const App: React.FC = () => {
                 <Header onOpenModal={handleOpenModal} />
                 <main>
                     <Hero onOpenModal={handleOpenModal} />
+                    <InteractiveWidget onOpenModal={handleOpenModal} />
                     <TrustedBy />
                     <Features />
                     <HowItWorks />
