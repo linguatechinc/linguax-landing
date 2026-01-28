@@ -41,9 +41,10 @@ const VoiceWave: React.FC = () => (
 
 interface HeroProps {
     onOpenModal: () => void;
+    onScrollToDemo: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
+const Hero: React.FC<HeroProps> = ({ onOpenModal, onScrollToDemo }) => {
     const { t } = useTranslation();
 
     return (
@@ -55,12 +56,18 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
                 <p className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-gray-400">
                     {t('hero.subtitle')}
                 </p>
-                <div className="mt-10 flex justify-center">
+                <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                     <button
-                        onClick={onOpenModal}
-                        className="bg-violet-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg shadow-violet-600/30 hover:bg-violet-700 transition-all duration-300 transform hover:scale-105"
+                        onClick={onScrollToDemo}
+                        className="w-full sm:w-auto bg-violet-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg shadow-violet-600/30 hover:bg-violet-700 transition-all duration-300 transform hover:scale-105"
                     >
                         {t('hero.cta')}
+                    </button>
+                    <button
+                        onClick={onOpenModal}
+                        className="w-full sm:w-auto bg-transparent border border-gray-700 text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-800 transition-colors duration-300"
+                    >
+                        {t('header.contact')}
                     </button>
                 </div>
                 <div className="mt-15">
