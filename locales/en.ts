@@ -10,7 +10,7 @@ export default {
     "subtitle": "You produce each sentence out loud, with help when you get stuck and time to think. That's how a language is built — not by repeating scripts.",
     "cta": "For Companies",
     "independentCta": "I'm Independent",
-    "trialCta": "Try 7 minutes for free",
+    "trialCta": "Try 4 minutes for free",
     "trialSubtext": "No card. No commitment.",
     "emailModal": {
       "title": "What's your email?",
@@ -54,14 +54,14 @@ export default {
       "description": "We send a magic link to your inbox — no password to remember."
     },
     "step3": {
-      "title": "Practice 7 minutes free",
+      "title": "Practice 4 minutes free",
       "description": "Jump straight into a real conversation in Human Mode."
     }
   },
   "cta": {
     "title": "Stop postponing it. Speak now.",
-    "subtitle": "Your 7 free minutes are one click away. No card, no commitment.",
-    "cta": "Try 7 minutes for free"
+    "subtitle": "Your 4 free minutes are one click away. No card, no commitment.",
+    "cta": "Try 4 minutes for free"
   },
   "footer": {
     "badge": "A Delaware Corporation / US Based Infrastructure",
@@ -76,7 +76,7 @@ export default {
   },
   "page": {
     "title": "LinguaX | Real-Time AI Conversational English Speaking Trainer",
-    "description": "An AI trainer that waits while you build the sentence — no rushing, no scripts to memorize. Try 7 minutes free, no card."
+    "description": "An AI trainer that waits while you build the sentence — no rushing, no scripts to memorize. Try 4 minutes free, no card."
   },
   "login": {
     "title": "Sign in to your account",

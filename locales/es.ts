@@ -10,7 +10,7 @@ export default {
     "subtitle": "Produces cada frase en voz alta, con ayudas cuando te trabas y tiempo para pensar. Así se construye un idioma — no solo repitiendo textos.",
     "cta": "Para Empresas",
     "independentCta": "Soy Independiente",
-    "trialCta": "Prueba 7 minutos gratis",
+    "trialCta": "Prueba 4 minutos gratis",
     "trialSubtext": "Sin tarjeta. Sin compromiso.",
     "emailModal": {
       "title": "¿Con qué email entramos?",
@@ -54,14 +54,14 @@ export default {
       "description": "Te llega un magic link a tu email — sin contraseña que recordar."
     },
     "step3": {
-      "title": "Practica 7 minutos gratis",
+      "title": "Practica 4 minutos gratis",
       "description": "Entra directo a una conversación real en Human Mode."
     }
   },
   "cta": {
     "title": "Deja de posponerlo. Habla ahora.",
-    "subtitle": "Tus 7 minutos gratis están a un clic. Sin tarjeta, sin compromiso.",
-    "cta": "Prueba 7 minutos gratis"
+    "subtitle": "Tus 4 minutos gratis están a un clic. Sin tarjeta, sin compromiso.",
+    "cta": "Prueba 4 minutos gratis"
   },
   "footer": {
     "badge": "A Delaware Corporation / US Based Infrastructure",
@@ -76,7 +76,7 @@ export default {
   },
   "page": {
     "title": "LinguaX | Entrenador de habla en inglés con IA conversacional en tiempo real",
-    "description": "Un entrenador de IA que espera mientras armas la frase — sin apurarte, sin memorizar guiones. Prueba 7 minutos gratis, sin tarjeta."
+    "description": "Un entrenador de IA que espera mientras armas la frase — sin apurarte, sin memorizar guiones. Prueba 4 minutos gratis, sin tarjeta."
   },
   "login": {
     "title": "Accede a tu cuenta",
